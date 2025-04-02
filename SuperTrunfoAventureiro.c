@@ -11,6 +11,8 @@ int main(){
     int pontoturisticos1,pontoturisticos2;
     float area1, area2;
     float pib1, pib2;
+    float densidade1, densidade2;
+    float pibcapita1, pibcapita2;
     
              //dados carta 1 
          printf("\nComplete as informaçõeses a baixo da Carta 1: \n");
@@ -27,7 +29,7 @@ int main(){
          printf("Digite o número de habitantes da cidade: ");
          scanf("%d",&populacao1);
 
-         printf("Digite a área da cidade (em km�): ");
+         printf("Digite a área da cidade (em km²): ");
          scanf("%f",&area1);
 
          printf("Digite o PIB (em bilhões de reais): ");
@@ -70,6 +72,13 @@ int main(){
          printf("Área: %.2f km²\n", area1);
          printf("PIB: %.2f bilhões de reais\n", pib1);
          printf("Número de pontos turústicos: %d\n", pontoturisticos1);
+
+         densidade1 = populacao1 / area1 ;  //Divide a população 1 da cidade pela sua área. O resultado será a densidade populacional, que representa o número de habitantes por quilômetro quadrado.
+         printf("Densidade Populacional: %f hab/km² \n",densidade1);
+         pibcapita1 = pib1 / populacao1;   //Divide o PIB da cidade pela sua população. O resultado será o PIB per capita, que indica a riqueza média por pessoa na cidade.
+         printf("PIB per Capita: %f reais\n",pibcapita1);
+
+
         
            //Leitura dos dados salvos carta 2
          printf("\nCarta 2:\n");
@@ -80,7 +89,12 @@ int main(){
          printf("Área: %.2f km²\n", area2);
          printf("PIB: %.2f bilhões de reais\n", pib2);
          printf("Número de pontos turústicos: %d\n", pontoturisticos2);  
-           
+        
+         densidade2 = populacao2 / area2 ;  //Divide a população 2 da cidade pela sua área. O resultado será a densidade populacional, que representa o número de habitantes por quilômetro quadrado.
+         printf("Densidade Populacional:%f hab/km² \n",densidade2);
+         pibcapita2 = pib2 / populacao2;   //Divide o PIB da cidade pela sua população. O resultado será o PIB per capita, que indica a riqueza média por pessoa na cidade.
+         printf("PIB per Capita: %f reais \n",pibcapita2);
+         
 
          return 0;
 
