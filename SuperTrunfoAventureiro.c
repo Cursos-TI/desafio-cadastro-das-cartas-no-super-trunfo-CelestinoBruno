@@ -73,10 +73,10 @@ int main(){
          printf("PIB: %.2f bilhões de reais\n", pib1);
          printf("Número de pontos turústicos: %d\n", pontoturisticos1);
 
-         densidade1 = populacao1 / area1 ;  //Divide a população 1 da cidade pela sua área. O resultado será a densidade populacional, que representa o número de habitantes por quilômetro quadrado.
-         printf("Densidade Populacional: %f hab/km² \n",densidade1);
-         pibcapita1 = pib1 / populacao1;   //Divide o PIB da cidade pela sua população. O resultado será o PIB per capita, que indica a riqueza média por pessoa na cidade.
-         printf("PIB per Capita: %f reais\n",pibcapita1);
+         densidade1 =(float) populacao1 / area1 ;  //Divide a população 1 da cidade pela sua área. O resultado será a densidade populacional, que representa o número de habitantes por quilômetro quadrado.
+         printf("Densidade Populacional: %.2f hab/km² \n",densidade1);
+         pibcapita1 =(float) pib1 / populacao1;   //Divide o PIB da cidade pela sua população. O resultado será o PIB per capita, que indica a riqueza média por pessoa na cidade.
+         printf("PIB per Capita: %.2f reais\n",pibcapita1);
 
 
         
@@ -90,10 +90,10 @@ int main(){
          printf("PIB: %.2f bilhões de reais\n", pib2);
          printf("Número de pontos turústicos: %d\n", pontoturisticos2);  
         
-         densidade2 = populacao2 / area2 ;  //Divide a população 2 da cidade pela sua área. O resultado será a densidade populacional, que representa o número de habitantes por quilômetro quadrado.
-         printf("Densidade Populacional:%f hab/km² \n",densidade2);
-         pibcapita2 = pib2 / populacao2;   //Divide o PIB da cidade pela sua população. O resultado será o PIB per capita, que indica a riqueza média por pessoa na cidade.
-         printf("PIB per Capita: %f reais \n",pibcapita2);
+         densidade2 =(float) populacao2 / area2 ;  //Divide a população 2 da cidade pela sua área. O resultado será a densidade populacional, que representa o número de habitantes por quilômetro quadrado.
+         printf("Densidade Populacional:%.2f hab/km² \n",densidade2);
+         pibcapita2 =(float) pib2 / populacao2;   //Divide o PIB da cidade pela sua população. O resultado será o PIB per capita, que indica a riqueza média por pessoa na cidade.
+         printf("PIB per Capita: %.2f reais \n",pibcapita2);
          
 
          return 0;
